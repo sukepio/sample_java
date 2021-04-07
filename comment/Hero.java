@@ -1,6 +1,4 @@
-public class Hero {
-  String name;
-  int hp;
+public class Hero extends Character {
 
   public Hero(String name){
     this.hp = 100;
@@ -11,7 +9,8 @@ public class Hero {
     this("ダミー");
   }
 
-  public void attack(){
+  public void attack(Matango m){
+    m.hp -= 5;
   }
   public void sleep(){
     this.hp = 1000;
