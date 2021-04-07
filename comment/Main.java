@@ -1,14 +1,16 @@
 public class Main {
   public static void main(String[] args){
-    Hero h = new Hero("ミナト");
-    Hero h2 = new Hero("アサカ");
+    Hero h = new Hero();
+    h.setName("ミナト");
+    Hero h2 = new Hero();
+    h2.setName("アサカ");
 
     Wizard w = new Wizard();
-    w.name = "スガワラ";
-    w.hp = 50;
+    w.setName("スガワラ");
+    w.setHp(50);
 
     PoisonMatango pm = new PoisonMatango('A');
     pm.attack(h);
-    System.out.println(h.hp);
+    System.out.println(h.getHp());
   }
 }
