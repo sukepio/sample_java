@@ -1,9 +1,14 @@
 public class Exam13 {
   
   public static void main(String[] args){
-    String[][] week = {{"日","月","火","水","木","金","土"}, {"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."}};
-    for (int i = 0; i < week[0].length; i++){
-      System.out.println(week[0][i] + "曜日は英語では" +  week[1][i] + "です");
+    for (int i = 1; i <= 5; i++){
+      for (int j = 1; j <= i; j++){
+        System.out.print(" ");
+      }
+      for (int k = 0; k < (5- i) * 2 -1; k++){
+        System.out.print("*");
+      }
+      System.out.println();
     }
   }
 }

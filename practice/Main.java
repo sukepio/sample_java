@@ -1,11 +1,15 @@
-import java.util.Random;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args){
-    String[] jp_week = {"日","月","火","水","木","金","土"};
-    String[] en_week = {"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
-    for(int i = 0; i < jp_week.length; i++ ){
-      System.out.println(jp_week[i] + "曜日は英語では" + en_week[i] + "です");
+    ArrayList<Integer> array = new ArrayList<Integer>();
+    array.add(10);
+    array.add(15);
+    array.add(20);
+    Iterator<Integer> it = array.iterator();
+    while (it.hasNext()){
+      int e = it.next();
+      System.out.println(e);
     }
   }
 }
