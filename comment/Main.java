@@ -12,6 +12,16 @@ public class Main {
     for(Hero name : names) {
       System.out.println(name.getName());
     }
+
+    Map<Hero, Integer> enemy_num = new HashMap<>();
+    enemy_num.put(h, 3);
+    enemy_num.put(h2, 7);
+    for (Hero name : enemy_num.keySet()){
+      int num = enemy_num.get(name);
+      System.out.println(name.getName() + "が倒した数＝" + num);
+
+
+    }
     Wizard w = new Wizard();
     w.setName("スガワラ");
     w.setHp(50);
